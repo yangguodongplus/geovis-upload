@@ -33,7 +33,7 @@ class Upload {
         const hash=this.computeBufferHash(file.buffer);
         let param = `appKey=${this.option.appKey}&categoryId=${categoryId}&filename=${file.originalname}&hash=${hash}`;
         const sign = this.hmacSHA256(param,this.option.secretKey);
-        let url=`${this.option.host}api/filecore/upload?${param}&sign=${sign}`;
+        let url=`${this.option.host}api/filecore/upload?${param}&sign=${encodeURIComponent(sign)}`;
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
