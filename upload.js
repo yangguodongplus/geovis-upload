@@ -12,8 +12,7 @@ class Upload {
             let UploadHost = "https://cloud.geovisearth.com";
             let AppKey = "";
             let SecretKey = "";
-            let expireTime = 86400;
-            this.option = new UploadOption(UploadHost, AppKey, SecretKey, expireTime);
+            this.option = new UploadOption(UploadHost, AppKey, SecretKey);
         }
     }
     hmacSHA256(message, key) {

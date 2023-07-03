@@ -1,6 +1,6 @@
 {
   "name": "geovis-upload",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "星图文件上传包",
   "main": "upload.js",
   "scripts": {

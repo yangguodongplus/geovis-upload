@@ -1,9 +1,8 @@
 class UploadOption{
-    constructor(host,appKey,secretKey,expireTime){
+    constructor(host,appKey,secretKey){
         this.host =host;
         this.appKey =appKey;
         this.secretKey =secretKey;
-        this.expireTime =expireTime;
     }
 }
 class UploadResult{
