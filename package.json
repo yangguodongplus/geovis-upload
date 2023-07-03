@@ -2,7 +2,7 @@
   "name": "geovis-upload",
   "version": "1.0.0",
   "description": "星图文件上传包",
-  "main": "upload-options.js",
+  "main": "upload.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +16,9 @@
   ],
   "author": "yangguodong",
   "license": "ISC",
-  "types": "./upload-options.d.ts"
+  "types": "./upload.d.ts",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "crypto": "^1.0.1"
+  }
 }
